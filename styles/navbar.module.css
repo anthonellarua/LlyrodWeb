@@ -1,0 +1,70 @@
+/* navbar.module.css */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+}
+
+.logo {
+  flex: 1;
+  color: white;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.li {
+  margin-left: 20px;
+}
+
+.li:first-child {
+  margin-left: 0;
+}
+
+.a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: var(--16);
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos para hacer el menú responsive */
+@media screen and (max-width: 768px) {
+  .menuToggle {
+     display: block;
+   }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .li {
+    margin-left: 0;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+}
