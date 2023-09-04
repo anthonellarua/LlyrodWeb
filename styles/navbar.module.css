@@ -1,16 +1,26 @@
-/* navbar.module.css */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
+.navSection{
+  background-color: var(--dark);
   padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
-.logo {
+.navContainer {
+  width: 100%;
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
   flex: 1;
   color: white;
-  font-weight: bold;
+}
+
+.logo{
+  width: auto;
+  height: 40px;
 }
 
 .menu {
@@ -21,32 +31,30 @@
 }
 
 .li {
-  margin-left: 20px;
-}
-
-.li:first-child {
-  margin-left: 0;
+  margin-left: 28px;
 }
 
 .a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: var(--white);
+  font-size: var(--16);
+  font-family: var(--poppins);
 }
+
 .menuToggle {
   display: none;
   background: none;
   border: none;
-  font-size: var(--16);
-  color: white;
+  font-size: var(--28);
+  color: var(--white);
   cursor: pointer;
 }
 
-/* Estilos para hacer el menú responsive */
 @media screen and (max-width: 768px) {
+
   .menuToggle {
-     display: block;
-   }
+    display: block;
+  }
+
   .menu {
     display: none;
     flex-direction: column;
@@ -55,6 +63,7 @@
     left: 0;
     background-color: #333;
     width: 100%;
+    padding-top: 12px;
   }
 
   .menu.active {
@@ -63,8 +72,8 @@
 
   .li {
     margin-left: 0;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left;
+    padding: 20px 20px;
     width: 100%;
   }
 }

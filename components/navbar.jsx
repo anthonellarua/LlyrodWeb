@@ -1,9 +1,17 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { HiMenuAlt1 } from "react-icons/hi";
-import { CgClose } from "react-icons/cg";
 import styles from "../styles/navbar.module.css";
+
+//img
+import Logo from "../public/assets/logo_completo.png";
+
+const pages=[
+  {name: "Industrias", link: "#"},
+  {name: "Sostenibilidad & ESG", link: "#"},
+  {name: "Trabaja con nosotros", link: "#"},
+  {name: "Contacto", link: "#"},
+];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,24 +22,27 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={styles.nav}>
-        <div className={styles.logo}>Logo</div>
-        <button className={styles.menuToggle} onClick={toggleMenu}>
-          ☰ {/* Icono de hamburguesa */}
-        </button>
-        <ul className={`${styles.menu} ${menuOpen ? styles.active : ""}`}>
-          <li className={styles.li}>
-            <a className={styles.a} href="#">
-              Nosotros
-            </a>
-          </li>
-          <li className={styles.li}>
-            <a className={styles.a} href="#">
-              Quiénes somos
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <section className={styles.navSection}>
+        <nav className={styles.navContainer}>
+          <Link className={styles.logoContainer} href="#">
+            <Image src={Logo} className={styles.logo} alt="Logo"/>
+          </Link>
+          <button className={styles.menuToggle} onClick={toggleMenu}>
+            ☰ {/* Icono de hamburguesa */}
+          </button>
+          <ul className={`${styles.menu} ${menuOpen ? styles.active : ""}`}>
+            {pages.map((page) =>{
+              return (
+                <li className={styles.li} key={page.name}>
+                  <Link className={styles.a} href={page.link}>
+                    {page.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </section>
     </>
   );
 };

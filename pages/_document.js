@@ -7,9 +7,8 @@ export default function Document() {
         <link rel="icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Playball&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-        <meta property="og:image" content="/pierrewhite.jpg" />  
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet" />
       </Head>
       <body>
         <Main />
