@@ -7,8 +7,8 @@ import styles from "../styles/navbar.module.css";
 import Logo from "../public/assets/logo_completo.png";
 
 const pages=[
-  {name: "Industrias", link: "#"},
-  {name: "Sostenibilidad & ESG", link: "#"},
+  {name: "Industrias", link: "/industrias"},
+  {name: "Sostenibilidad & ESG", link: "/sostenibilidad"},
   {name: "Trabaja con nosotros", link: "#"},
   {name: "Contacto", link: "#"},
 ];
@@ -24,7 +24,7 @@ const Navbar = () => {
     <>
       <section className={styles.navSection}>
         <nav className={styles.navContainer}>
-          <Link className={styles.logoContainer} href="#">
+          <Link className={styles.logoContainer} href="/">
             <Image src={Logo} className={styles.logo} alt="Logo"/>
           </Link>
           <button className={styles.menuToggle} onClick={toggleMenu}>

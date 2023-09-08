@@ -1,0 +1,145 @@
+.tittleSection{
+   display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+   background-color: var(--dark);
+   padding: 40px 0px 0px 0px;
+}
+
+.tittleContainer{
+   max-width: 120rem;
+	width: 100%;
+   display: flex;
+   flex-direction: column;
+   color: var(--white);
+   font-family: var(--inter);
+}
+
+.tittlePrincipal{
+   font-size: var(--40);
+   font-weight: 300;
+}
+
+.tittleSecondary{
+   font-size: var(--40);
+   font-weight: 500;
+}
+
+
+/*---------------------------------------------------------- mineria -------------------------------------------------*/
+
+.subtittleSection{
+   display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+   background-color: var(--dark);
+   padding: 80px 0px 40px 0px;
+}
+
+.subtittleContainer{
+   max-width: 120rem;
+	width: 100%;
+   display: flex;
+   flex-direction: column;
+   font-family: var(--inter);
+}
+
+.tittlePrincipalIndustrias{
+   font-size: var(--28);
+   font-weight: 400;
+   color: var(--amarillo);
+   margin-bottom: 20px;
+}
+
+.textPrincipalIndustrias{
+   font-size: var(--20);
+   font-weight: 400;
+   color: var(--white);
+   margin-bottom: 8px;
+   width: 50%;
+}
+
+/*photomineria*/
+
+.photoSection{
+   position: relative;
+}
+
+.photo{
+   width: 100%;
+   height: 480px;
+   object-fit: cover;
+}
+
+.photoContainer{
+   position: absolute;
+   color: var(--white);
+   font-family: var(--inter);
+   top: 90%;
+   left: 10%;
+   transform: translate(-10%, -90%);
+   width: 400px;
+}
+
+.phototittlePrincipal{
+   font-size: var(--12);
+   font-weight: 300;
+}
+
+.phototittleSecondary{
+   font-size: var(--24);
+   font-weight: 500;
+}
+
+/*cards mineria*/
+
+.cardsSection{
+   display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+   padding: 80px 0px;
+}
+
+.cardsContainer{
+   max-width: 120rem;
+	width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   width: 400px;
+   gap: 20px;
+}
+
+.cardImage{
+   width: 100%;
+   height: auto;
+   height: 280px;
+   object-fit: cover;
+}
+
+.cardNumber{
+   font-family: var(--inter);
+   font-size: var(--56);
+}
+
+.cardTittle{
+   font-family: var(--inter);
+   font-size: var(--24);
+   color: var(--amarillo);
+}
+
+.cardTexto{
+   font-family: var(--inter);
+   font-size: var(--16);
+   color: var(--dark);
+}

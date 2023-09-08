@@ -10,6 +10,17 @@ import Image from "next/image";
 import ImagenHome from "../public/assets/img/imagen_home.png";
 import LogoHome from "../public/assets/logo_soloimagen.png";
 
+//icons
+import {BsGraphUpArrow} from "react-icons/bs";
+import {BsRecycle} from "react-icons/bs";
+import {BsSun} from "react-icons/bs";
+
+const cards=[
+  {icon: <BsRecycle size={100}/>, tittle:"Minería", link: "#"},
+  {icon: <BsGraphUpArrow size={100}/>, tittle:"Tecnología", link: "#"},
+  {icon: <BsSun size={100}/>, tittle:"Due Diligence", link: "#"},
+];
+
 const Home = () => {
   return (
     <>
@@ -32,6 +43,19 @@ const Home = () => {
               Promovemos el uso de nuevas tecnologías para el desarrollo de ventajas competitivas,
               para esto entrenamos continuamente profesionales con el propósito de alcanzar eficiencia, calidad y rentabilidad.</span>
           </div>
+        </div>
+      </section>
+      <section className={styles.cardsSection}>
+        <div className={styles.cardsContainer}>
+          {cards.map((card) =>{
+            return (
+              <div className={styles.card} key={card.tittle}>
+                <span className={styles.cardIcon}> {card.icon} </span>
+                <span className={styles.cardTittle}> {card.tittle} </span>
+                <Link className={styles.cardButtonVer} href={card.link}>Ver &gt;</Link>
+              </div>
+              );
+          })}
         </div>
       </section>
     </>
