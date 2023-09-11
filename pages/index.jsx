@@ -9,6 +9,7 @@ import Image from "next/image";
 //img
 import ImagenHome from "../public/assets/img/imagen_home.png";
 import LogoHome from "../public/assets/logo_soloimagen.png";
+import GifLogoHome from "../public/assets/img/gif_llyrod.gif";
 
 //icons
 import {BsGraphUpArrow} from "react-icons/bs";
@@ -37,9 +38,11 @@ const Home = () => {
       <section className={styles.infoSection}>
         <div className={styles.infoContainer}>
           <div className={styles.cardInfo}>
-            <Image src={LogoHome} className={styles.infoLogo} alt="Logo Home"/>
+            <Image src={GifLogoHome} className={styles.infoLogo} alt="Logo Home"/>
             <span className={styles.infoHome}>Somos una empresa que busca la generación de valor, basados en la información especializada y
               proveeduría deservicios profesionales de alta valoración.
+              Promovemos el uso de nuevas tecnologías para el desarrollo de ventajas competitivas,
+              para esto entrenamos continuamente profesionales con el propósito de alcanzar eficiencia, calidad y rentabilidad.
               Promovemos el uso de nuevas tecnologías para el desarrollo de ventajas competitivas,
               para esto entrenamos continuamente profesionales con el propósito de alcanzar eficiencia, calidad y rentabilidad.</span>
           </div>
@@ -52,7 +55,6 @@ const Home = () => {
               <div className={styles.card} key={card.tittle}>
                 <span className={styles.cardIcon}> {card.icon} </span>
                 <span className={styles.cardTittle}> {card.tittle} </span>
-                <Link className={styles.cardButtonVer} href={card.link}>Ver &gt;</Link>
               </div>
               );
           })}

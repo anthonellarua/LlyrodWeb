@@ -5,11 +5,10 @@
 	justify-content: center;
 	align-items: center;
    background-color: var(--dark);
-   padding: 40px 0px 0px 0px;
+   padding: 40px 0px 0px 40px;
 }
 
 .tittleContainer{
-   max-width: 120rem;
 	width: 100%;
    display: flex;
    flex-direction: column;
@@ -37,11 +36,10 @@
 	justify-content: center;
 	align-items: center;
    background-color: var(--dark);
-   padding: 80px 0px 40px 0px;
+   padding: 40px;
 }
 
 .subtittleContainer{
-   max-width: 120rem;
 	width: 100%;
    display: flex;
    flex-direction: column;
@@ -55,12 +53,25 @@
    margin-bottom: 20px;
 }
 
+.textIndustrias{
+   display: flex;
+   justify-content: space-between;
+}
+
 .textPrincipalIndustrias{
    font-size: var(--20);
    font-weight: 400;
    color: var(--white);
    margin-bottom: 8px;
    width: 50%;
+}
+
+.textSecIndustrias{
+   font-size: var(--20);
+   font-weight: 400;
+   color: var(--white);
+   margin-bottom: 8px;
+   width: 80%;
 }
 
 /*photomineria*/
@@ -102,30 +113,44 @@
 	flex-direction: column;
 	width: 100%;
 	justify-content: center;
-	align-items: center;
-   padding: 80px 0px;
+	align-items: flex-start;
+   padding: 40px 40px;
+}
+
+.quehacemos{
+   font-size: var(--28);
+   font-family: var(--inter);
+   font-weight: 500;
+   text-align: left;
+   margin-bottom: 40px;
+   color: var(--dark);
 }
 
 .cardsContainer{
-   max-width: 120rem;
 	width: 100%;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 
 .card{
    display: flex;
    flex-direction: column;
-   width: 400px;
+   width: 32%;
    gap: 20px;
 }
 
 .cardImage{
    width: 100%;
    height: auto;
-   height: 280px;
+   height: 300px;
    object-fit: cover;
+   transition: transform .5s;
 }
+
+.cardImage:hover{
+   transform: scale(1.05);
+}
+
 
 .cardNumber{
    font-family: var(--inter);

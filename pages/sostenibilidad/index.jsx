@@ -34,7 +34,7 @@ const Sostenibilidad = () => {
         </div>
       </section>
       <section className={styles.photoSection}>
-         <Image className={styles.photoSostenibilidad} src={ImagenSostenibilidad}/>
+         <Image className={styles.photoSostenibilidad} src={ImagenSostenibilidad} alt="Sostenibilidad"/>
          <div className={styles.photoContainer}>
             <span className={styles.phototittlePrincipal}>Foto tomada el 30/08/2023</span>
             <h2 className={styles.phototittleSecondary}>¿Cómo contribuimos a la sostenibilidad?</h2>
@@ -42,10 +42,10 @@ const Sostenibilidad = () => {
       </section>
       <section className={styles.cardsSection}>
         <div className={styles.cardsContainer}>
-            {cards.map((card) =>{
+            {cards.map((card, index) =>{
                return (
-                  <div className={styles.card}>
-                     <Image className={styles.cardImage} src={card.image}/>
+                  <div className={styles.card} key={index}>
+                     <Image className={styles.cardImage} src={card.image} alt={card.tittle}/>
                      <h2 className={styles.cardNumber}>{card.number}</h2>
                      <span className={styles.cardTittle}>{card.tittle}</span>
                      <span className={styles.cardTexto}>{card.texto}</span>

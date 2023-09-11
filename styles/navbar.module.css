@@ -1,6 +1,6 @@
 .navSection{
   background-color: var(--dark);
-  padding: 20px;
+  padding: 20px 40px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -8,7 +8,6 @@
 
 .navContainer {
   width: 100%;
-  max-width: 120rem;
   display: flex;
   align-items: center;
 }
