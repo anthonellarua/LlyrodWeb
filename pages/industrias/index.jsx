@@ -26,15 +26,15 @@ import {BsSun} from "react-icons/bs";
 import Accordion from "./components/accordion";
 
 const cardsMineria=[
-  {image: Mineria1, tittle:"Capacitación ganadera", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
-  {image: Mineria2, tittle:"Promoción de productores ganaderos", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
-  {image: Mineria3, tittle:"Promoción de productores ganaderos", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
+  {image: Mineria1, tittle:"Diagnostico socioeconómico-productivo", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
+  {image: Mineria2, tittle:"Fortalecimiento de capacidades", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
+  {image: Mineria3, tittle:"Articulación comercial", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
 ];
 
 const cardsTecnologia=[
-  {image: Tecnologia1, tittle:"Bootcamps gratuitas", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
-  {image: Tecnologia2, tittle:"Data Sourcing", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
-  {image: Tecnologia3, tittle:"Entrenamiento para Engeniers Juniors", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
+  {image: Tecnologia1, tittle:"Bootcamps formativas", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
+  {image: Tecnologia2, tittle:"Outsourcing especializado", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
+  {image: Tecnologia3, tittle:"Entrenamiento para Data Engineers jr.", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
 ];
 
 const cardsBi=[
@@ -45,19 +45,12 @@ const cardsBi=[
 const Industrias = () => {
   return (
     <>
-      <section className={styles.tittleSection}>
-        <div className={styles.tittleContainer}>
-          <h2 className={styles.tittlePrincipal}>Industrias & ESG</h2>
-
-        </div>
-      </section>
-
       <section className={styles.subtittleSection}>
         <div className={styles.subtittleContainer}>
           <h2 className={styles.tittlePrincipalIndustrias}>Minería</h2>
           <div className={styles.textIndustrias}>
-            <h2 className={styles.textPrincipalIndustrias}>En medio de una industria que está experimentando un cambio fundamental, 
-            ofrecemos ideas para ayudar a remodelar el negocio para el futuro.</h2>
+            <h2 className={styles.textPrincipalIndustrias}>En el marco de la política de responsabilidad social-cooporativa,
+            facilitamos soluciones destinadas a promover el desarrollo  y la sostenibilidad de las comunidades involucradas.</h2>
           </div>
         </div>
       </section>
@@ -65,7 +58,6 @@ const Industrias = () => {
       <section className={styles.photoSection}>
          <Image className={styles.photo} src={MineriaPrincipal} alt="Minería"/>
          <div className={styles.photoContainer}>
-            <span className={styles.phototittlePrincipal}>Foto tomada el 30/08/2023</span>
             <h2 className={styles.phototittleSecondary}>¿La necesidad de la minería en nuestro sector?</h2>
          </div>
       </section>
@@ -96,7 +88,6 @@ const Industrias = () => {
       <section className={styles.photoSection}>
          <Image className={styles.photo} src={TecnologiaPrincipal} alt="Tecnología"/>
          <div className={styles.photoContainer}>
-            <span className={styles.phototittlePrincipal}>Foto tomada el 30/08/2023</span>
             <h2 className={styles.phototittleSecondary}>¿Conjunto de recursos o de procedimientos?</h2>
          </div>
       </section>
@@ -128,7 +119,6 @@ const Industrias = () => {
       <section className={styles.photoSection}>
          <Image className={styles.photo} src={InteligenciaPrincipal} alt="Inteligencia Artificial"/>
          <div className={styles.photoContainer}>
-            <span className={styles.phototittlePrincipal}>Foto tomada el 30/08/2023</span>
             <h2 className={styles.phototittleSecondary}>¿Cómo la inteligencia de negocios puede ayudar a una empresa?</h2>
          </div>
       </section>

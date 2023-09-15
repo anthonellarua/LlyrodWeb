@@ -12,7 +12,7 @@
 
 .imagen{
    max-width: 100%;
-   height: 520px;
+   height: 600px;
    object-fit: cover;
    display:block
 }
@@ -27,23 +27,50 @@
    align-items: flex-start;
 }
 
-.textoSecundario, .textoPrincipal{
-   font-size: var(--40);
+.textoSecundario{
+   font-size: var(--32);
+   font-weight: 300;
    font-family: var(--inter);
    color: var(--white);
 }
 
-.textoSecundario{
-   font-weight: 400;
+.textoPrincipal{
+   font-size: var(--40);
+   font-weight: 500;
+   font-family: var(--ibm);
+   color: var(--white);
+/*
+   width: 0;
+   overflow: hidden;
+   white-space: nowrap;
+   border-right: 0.15em solid var(--white);
+   animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;*/
 }
+/*
+@keyframes typing {
+   from {
+     width: 0;
+   }
+   to {
+     width: 100%;
+   }
+}
+
+@keyframes blink {
+   50% {
+     border-color: transparent;
+   }
+ }
+ */
 
 .textoPrincipal{
    font-weight: 500;
 }
 
 .buttonVer{
-   background-color: var(--amarillo);
-   color: var(--white);
+   border: 1px solid var(--white);
+   background-color: var(--white);
+   color: var(--dark);
    font-size: var(--16);
    font-family: var(--inter);
    padding: 8px 36px;
@@ -86,7 +113,8 @@
 }
 
 .infoHome{
-   font-family: var(--poppins);
+   font-family: var(--roboto);
+   font-weight: 3s00;
    color: var(--white);
    font-size: var(--16);
 }

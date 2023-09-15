@@ -100,9 +100,9 @@
 }
 
 .cardTittle{
-   font-family: var(--inter);
+   font-family: var(--ibm);
    font-size: var(--24);
-   color: var(--amarillo);
+   color: var(--dark);
 }
 
 .cardTexto{
