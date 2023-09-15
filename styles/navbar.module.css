@@ -1,3 +1,11 @@
+.fixedNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
 .navSection{
   background-color: var(--dark);
   padding: 20px 40px;
