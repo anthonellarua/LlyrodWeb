@@ -9,8 +9,7 @@ import Logo from "../public/assets/logo_completo.png";
 const pages = [
   { name: "Industrias", link: "/industrias" },
   { name: "Sostenibilidad & ESG", link: "/sostenibilidad" },
-  { name: "Trabaja con nosotros", link: "#" },
-  { name: "Contacto", link: "#" },
+  { name: "Trabaja con nosotros", link: "/trabaja_con_nosotros" },
 ];
 
 const Navbar = () => {
@@ -23,7 +22,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 0) {
         setIsFixed(true);
       } else {
         setIsFixed(false);

@@ -40,6 +40,7 @@ const cardsTecnologia=[
 const cardsBi=[
   {image: Inteligencia1, tittle:"Reportes en Power BI", texto: "Varias perspectivas de un conjunto de datos, con objetos visuales que representan hallazgos."},
   {image: Inteligencia2, tittle:"Almacenamiento en Base de Datos", texto: "Las bases de datos pueden almacenar información sobre personas, productos, pedidos u otras cosas."},
+  {image: Inteligencia2, tittle:"Almacenamiento en Base de Datos", texto: "Las bases de datos pueden almacenar información sobre personas, productos, pedidos u otras cosas."},
 ];
 
 const Industrias = () => {
@@ -51,6 +52,7 @@ const Industrias = () => {
           <div className={styles.textIndustrias}>
             <h2 className={styles.textPrincipalIndustrias}>En el marco de la política de responsabilidad social-cooporativa,
             facilitamos soluciones destinadas a promover el desarrollo  y la sostenibilidad de las comunidades involucradas.</h2>
+            <Accordion title={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."} content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}/>
           </div>
         </div>
       </section>
@@ -63,6 +65,7 @@ const Industrias = () => {
       </section>
 
       <section className={styles.cardsSection}>
+        <span className={styles.quehacemos}>¿Qué hacemos?</span>
         <div className={styles.cardsContainer}>
 
             {cardsMineria.map((card, index) =>{
@@ -80,8 +83,12 @@ const Industrias = () => {
       <section className={styles.subtittleSection}>
         <div className={styles.subtittleContainer}>
           <h2 className={styles.tittlePrincipalIndustrias}>Tecnología</h2>
-          <h2 className={styles.textPrincipalIndustrias}>La tecnología es la suma de técnicas, habilidades, métodos y procesos
-          utilizados en la producción de bienes o servicios o en el logro de objetivos.</h2>
+          <div className={styles.textIndustrias}>
+            <h2 className={styles.textPrincipalIndustrias}>La tecnología es la suma de técnicas, habilidades, métodos y procesos
+            utilizados en la producción de bienes o servicios o en el logro de objetivos.</h2>
+            <Accordion title={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}
+            content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}/>
+          </div>
         </div>
       </section>
 
@@ -111,8 +118,11 @@ const Industrias = () => {
       <section className={styles.subtittleSection}>
         <div className={styles.subtittleContainer}>
           <h2 className={styles.tittlePrincipalIndustrias}>Inteligencia de negocios</h2>
-          <h2 className={styles.textPrincipalIndustrias}>En medio de una industria que está experimentando un cambio fundamental,
-          ofrecemos ideas para ayudar a remodelar el negocio para el futuro.</h2>
+          <div className={styles.textIndustrias}>
+            <h2 className={styles.textPrincipalIndustrias}>En medio de una industria que está experimentando un cambio fundamental,
+            ofrecemos ideas para ayudar a remodelar el negocio para el futuro.</h2>
+            <Accordion title={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."} content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}/>
+          </div>
         </div>
       </section>
 

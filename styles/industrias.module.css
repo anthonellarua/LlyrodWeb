@@ -36,7 +36,9 @@
 	justify-content: center;
 	align-items: center;
    background-color: var(--dark);
-   padding: 40px;
+   background: linear-gradient(50deg, #343440, var(--dark));
+   background: linear-gradient(50deg, var(--dark), #323240);
+   padding: 40px 80px;
 }
 
 .subtittleContainer{
@@ -51,11 +53,13 @@
    font-weight: 300;
    color: var(--amarillo);
    margin-bottom: 20px;
+   font-family: var(--ibm);
 }
 
 .textIndustrias{
    display: flex;
    justify-content: space-between;
+   gap: 40px;
 }
 
 .textPrincipalIndustrias{
@@ -63,7 +67,7 @@
    font-weight: 400;
    color: var(--white);
    margin-bottom: 8px;
-   width: 50%;
+   width: 100%;
 }
 
 .textSecIndustrias{
@@ -168,4 +172,33 @@
    font-family: var(--inter);
    font-size: var(--16);
    color: var(--dark);
+}
+
+
+/*--------------------------accordion---------------------------*/
+
+
+.textPrincipalAccordion{
+   color: var(--white);
+   font-family: var(--ibm);
+   font-size: var(--16);
+}
+
+.textSecAccordion{
+   color: var(--white);
+   font-family: var(--ibm);
+   font-size: var(--16);
+}
+
+.buttonAccordion{
+   text-align: left;
+   border: none;
+   background: none;
+   outline: none;
+   cursor: pointer;
+   color: var(--white);
+   font-family: var(--ibm);
+   font-size: var(--16);
+   font-weight: 500;
+   margin-top: 20px;
 }

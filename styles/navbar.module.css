@@ -8,10 +8,11 @@
 
 .navSection{
   background-color: var(--dark);
-  padding: 20px 40px;
+  padding: 16px 40px;
   display: flex;
   width: 100%;
   justify-content: center;
+  transition: all 0.3s;
 }
 
 .navContainer {
@@ -27,7 +28,7 @@
 
 .logo{
   width: auto;
-  height: 40px;
+  height: 44px;
 }
 
 .menu {
@@ -39,6 +40,13 @@
 
 .li {
   margin-left: 28px;
+  padding: 8px 0px;
+  transition: 0.3s all ease;
+  border-bottom: 3px solid var(--dark)
+}
+
+.li:hover{
+  border-bottom: 3px solid var(--amarillo);
 }
 
 .a {
@@ -55,6 +63,15 @@
   color: var(--white);
   cursor: pointer;
 }
+
+.activeLink a {
+  border-bottom: 2px solid var(--amarillo);
+}
+
+.hoveredLink a:hover {
+  border-bottom: 2px solid var(--amarillo);
+}
+
 
 @media screen and (max-width: 768px) {
 

@@ -3,6 +3,9 @@ import { useState } from "react";
 //css imports
 import styles from "../../../styles/industrias.module.css"
 
+//icons
+import {BsChevronDown} from "react-icons/bs";
+
 export default function Accordion(props) {
   const [isShowing, setIsShowing] = useState(false);
 
@@ -15,29 +18,26 @@ export default function Accordion(props) {
       style={{
         width: "100%",
       }}
-      className={styles.textSecIndustrias}
     >
-      <button
-        style={{
+      <div className={`${styles.accordionContent} ${isShowing ? styles.activeAccordion:''}`}>
+        <p className={styles.textPrincipalAccordion}>{props.title}</p>
+      </div>
 
-          textAlign: "left",
-          border: "none",
-          background: "transparent",
-          outline: "none",
-          cursor: "pointer"
-        }}
-        
-        onClick={toggle}
-        type="button"
-      >
-        <p>{props.title}</p>
-      </button>
       <div
-        style={{ display: isShowing ? "block" : "none", padding: "5px" }}
+        style={{ display: isShowing ? "block" : "none"}}
+        className={styles.textSecAccordion}
         dangerouslySetInnerHTML={{
           __html: props.content
         }}
       />
+
+      <button
+        className={styles.buttonAccordion}
+        onClick={toggle}
+        type="button"
+      >
+        {isShowing ? "Leer menos" : "Leer más"}
+      </button>
     </div>
   );
 }

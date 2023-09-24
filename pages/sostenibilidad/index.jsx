@@ -36,7 +36,6 @@ const Sostenibilidad = () => {
       <section className={styles.photoSection}>
          <Image className={styles.photoSostenibilidad} src={ImagenSostenibilidad} alt="Sostenibilidad"/>
          <div className={styles.photoContainer}>
-            <span className={styles.phototittlePrincipal}>Foto tomada el 30/08/2023</span>
             <h2 className={styles.phototittleSecondary}>¿Cómo contribuimos a la sostenibilidad?</h2>
          </div>
       </section>
