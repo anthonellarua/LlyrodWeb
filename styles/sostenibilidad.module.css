@@ -34,7 +34,7 @@
 
 .photoSostenibilidad{
    width: 100%;
-   height: 480px;
+   height: 560px;
    object-fit: cover;
 }
 
@@ -43,19 +43,25 @@
    color: var(--white);
    font-family: var(--inter);
    top: 90%;
-   left: 10%;
-   transform: translate(-10%, -90%);
+   left: 7%;
+   transform: translate(-7%, -90%);
    width: 400px;
-}
-
-.phototittlePrincipal{
-   font-size: var(--12);
-   font-weight: 300;
 }
 
 .phototittleSecondary{
    font-size: var(--24);
-   font-weight: 500;
+   font-family: var(--ibm);
+   font-weight: 400;
+   border-left: var(--amarillo) 3px solid;
+   padding-left: 20px;
+}
+
+.degradadoPortafolioTop {
+   position: relative;
+   height: 560px;
+   background: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, rgba(3, 3, 33, 0.70) 98%);
+   z-index: 0;
+   margin-bottom: -560px;
 }
 
 /*---------------------------------------------------------- cards -------------------------------------------------*/

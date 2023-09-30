@@ -44,30 +44,32 @@ const cardsBi=[
 ];
 
 const Industrias = () => {
+
   return (
     <>
-      <section className={styles.subtittleSection}>
+      <section className={styles.subtittleSection} id="mineria">
         <div className={styles.subtittleContainer}>
           <h2 className={styles.tittlePrincipalIndustrias}>Minería</h2>
           <div className={styles.textIndustrias}>
-            <h2 className={styles.textPrincipalIndustrias}>En el marco de la política de responsabilidad social-cooporativa,
-            facilitamos soluciones destinadas a promover el desarrollo  y la sostenibilidad de las comunidades involucradas.</h2>
-            <Accordion title={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."} content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}/>
+            <h2 className={styles.textPrincipalIndustrias}>En el marco de la política de responsabilidad social-corporativa, facilitamos soluciones
+             destinadas a promover el desarrollo y sostenibilidad de las comunidades involucradas.</h2>
+            <Accordion title={"Grupo Llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros. Nuestra participación activa en la industria de la minería se basa en principios sólidos de sostenibilidad y ética empresarial. Creemos firmemente que, al extraer y aprovechar los recursos naturales de manera responsable, podemos contribuir al bienestar de las comunidades locales y al cuidado del entorno en el que operamos."} content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros. "}/>
           </div>
         </div>
       </section>
 
       <section className={styles.photoSection}>
-         <Image className={styles.photo} src={MineriaPrincipal} alt="Minería"/>
-         <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>¿La necesidad de la minería en nuestro sector?</h2>
-         </div>
+          <div className={styles.degradadoPortafolioTop}>
+          </div>
+          <div className={styles.photoContainer}>
+            <h2 className={styles.phototittleSecondary}>Las empresas mineras deben adoptar un enfoque holístico</h2>
+          </div>
+          <Image className={styles.photo} src={MineriaPrincipal} alt="Minería"/>
       </section>
 
       <section className={styles.cardsSection}>
         <span className={styles.quehacemos}>¿Qué hacemos?</span>
         <div className={styles.cardsContainer}>
-
             {cardsMineria.map((card, index) =>{
                return (
                   <div className={styles.card} key={index}>
@@ -80,12 +82,12 @@ const Industrias = () => {
         </div>
       </section>
 
-      <section className={styles.subtittleSection}>
+      <section className={styles.subtittleSection} id="tecnologia">
         <div className={styles.subtittleContainer}>
           <h2 className={styles.tittlePrincipalIndustrias}>Tecnología</h2>
           <div className={styles.textIndustrias}>
-            <h2 className={styles.textPrincipalIndustrias}>La tecnología es la suma de técnicas, habilidades, métodos y procesos
-            utilizados en la producción de bienes o servicios o en el logro de objetivos.</h2>
+            <h2 className={styles.textPrincipalIndustrias}>Adoptamos la tecnología en el negocio que 
+            facilita la correcta toma de decisiones para el ámbito productivo, social y medioambiental. </h2>
             <Accordion title={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}
             content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}/>
           </div>
@@ -93,10 +95,12 @@ const Industrias = () => {
       </section>
 
       <section className={styles.photoSection}>
-         <Image className={styles.photo} src={TecnologiaPrincipal} alt="Tecnología"/>
-         <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>¿Conjunto de recursos o de procedimientos?</h2>
-         </div>
+        <div className={styles.degradadoPortafolioTop}>
+        </div>
+        <Image className={styles.photo} src={TecnologiaPrincipal} alt="Tecnología"/>
+        <div className={styles.photoContainer}>
+          <h2 className={styles.phototittleSecondary}>Las empresas que adoptan la tecnología son las que llevan la delantera</h2>
+        </div>
       </section>
 
       <section className={styles.cardsSection}>
@@ -115,22 +119,24 @@ const Industrias = () => {
         </div>
       </section>
 
-      <section className={styles.subtittleSection}>
+      <section className={styles.subtittleSection} id="due_diligence">
         <div className={styles.subtittleContainer}>
           <h2 className={styles.tittlePrincipalIndustrias}>Inteligencia de negocios</h2>
           <div className={styles.textIndustrias}>
-            <h2 className={styles.textPrincipalIndustrias}>En medio de una industria que está experimentando un cambio fundamental,
-            ofrecemos ideas para ayudar a remodelar el negocio para el futuro.</h2>
+            <h2 className={styles.textPrincipalIndustrias}>En medio de una industria que está
+            experimentando cambios drásticos, ofrecemos ideas para transformar negocios del futuro.</h2>
             <Accordion title={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."} content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}/>
           </div>
         </div>
       </section>
 
       <section className={styles.photoSection}>
-         <Image className={styles.photo} src={InteligenciaPrincipal} alt="Inteligencia Artificial"/>
-         <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>¿Cómo la inteligencia de negocios puede ayudar a una empresa?</h2>
-         </div>
+        <div className={styles.degradadoPortafolioTop}>
+        </div>
+        <Image className={styles.photo} src={InteligenciaPrincipal} alt="Inteligencia Artificial"/>
+        <div className={styles.photoContainer}>
+          <h2 className={styles.phototittleSecondary}>La inteligencia de negocios acelera la innovación y la toma de decisiones clave</h2>
+        </div>
       </section>
 
       <section className={styles.cardsSection}>

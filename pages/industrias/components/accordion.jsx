@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 //css imports
 import styles from "../../../styles/industrias.module.css"
@@ -19,8 +19,14 @@ export default function Accordion(props) {
         width: "100%",
       }}
     >
-      <div className={`${styles.accordionContent} ${isShowing ? styles.activeAccordion:''}`}>
-        <p className={styles.textPrincipalAccordion}>{props.title}</p>
+      <div className={`${styles.accordionContent} ${isShowing ? styles.activeAccordion : ''}`}>
+        <div className={styles.absoluteTittle}>
+          <div
+            className={isShowing ? '' : styles.degradadoTitleAccordion}
+          >
+            <p className={styles.textPrincipalAccordion}>{props.title}</p>
+          </div>
+        </div>
       </div>
 
       <div
