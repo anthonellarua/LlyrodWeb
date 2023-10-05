@@ -18,12 +18,13 @@ import Tecnologia3 from "../../public/assets/img/industrias/tecnologia/tecnologi
 import InteligenciaPrincipal from "../../public/assets/img/industrias/inteligencia/inteligencia_prinicipal.png";
 import Inteligencia1 from "../../public/assets/img/industrias/inteligencia/inteligencia_1.png";
 import Inteligencia2 from "../../public/assets/img/industrias/inteligencia/inteligencia_2.png";
+import Inteligencia3 from "../../public/assets/img/industrias/inteligencia/inteligencia_3.png";
 
 //icons
 import {BsGraphUpArrow} from "react-icons/bs";
 import {BsRecycle} from "react-icons/bs";
 import {BsSun} from "react-icons/bs";
-import Accordion from "./components/accordion";
+import Accordion from "./components/accordion"; 
 
 const cardsMineria=[
   {image: Mineria1, tittle:"Diagnostico socioeconómico-productivo", texto: "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas."},
@@ -40,7 +41,7 @@ const cardsTecnologia=[
 const cardsBi=[
   {image: Inteligencia1, tittle:"Reportes en Power BI", texto: "Varias perspectivas de un conjunto de datos, con objetos visuales que representan hallazgos."},
   {image: Inteligencia2, tittle:"Almacenamiento en Base de Datos", texto: "Las bases de datos pueden almacenar información sobre personas, productos, pedidos u otras cosas."},
-  {image: Inteligencia2, tittle:"Almacenamiento en Base de Datos", texto: "Las bases de datos pueden almacenar información sobre personas, productos, pedidos u otras cosas."},
+  {image: Inteligencia3, tittle:"Almacenamiento en Base de Datos", texto: "Las bases de datos pueden almacenar información sobre personas, productos, pedidos u otras cosas."},
 ];
 
 const Industrias = () => {
@@ -53,7 +54,7 @@ const Industrias = () => {
           <div className={styles.textIndustrias}>
             <h2 className={styles.textPrincipalIndustrias}>En el marco de la política de responsabilidad social-corporativa, facilitamos soluciones
              destinadas a promover el desarrollo y sostenibilidad de las comunidades involucradas.</h2>
-            <Accordion title={"Grupo Llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros. Nuestra participación activa en la industria de la minería se basa en principios sólidos de sostenibilidad y ética empresarial. Creemos firmemente que, al extraer y aprovechar los recursos naturales de manera responsable, podemos contribuir al bienestar de las comunidades locales y al cuidado del entorno en el que operamos."} content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros. "}/>
+            <Accordion title={"Grupo Llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros. Nuestra participación activa en la industria de la minería se basa en principios sólidos de sostenibilidad y ética empresarial. Creemos firmemente que, al extraer y aprovechar los recursos naturales de manera responsable, podemos contribuir al bienestar de las comunidades locales y al cuidado del entorno en el que operamos."} content={"Además, nos comprometemos a respetar los más altos estándares éticos en todas nuestras operaciones. La integridad y la transparencia son fundamentales para nuestra cultura empresarial, y trabajamos incansablemente para prevenir la corrupción y promover la equidad en todas nuestras relaciones comerciales."}/>
           </div>
         </div>
       </section>
@@ -88,8 +89,8 @@ const Industrias = () => {
           <div className={styles.textIndustrias}>
             <h2 className={styles.textPrincipalIndustrias}>Adoptamos la tecnología en el negocio que 
             facilita la correcta toma de decisiones para el ámbito productivo, social y medioambiental. </h2>
-            <Accordion title={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}
-            content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}/>
+            <Accordion title={"En Grupo Llyrod también abrazamos la innovación y la tecnología como motores clave para el éxito en todas nuestras operaciones. Reconocemos que vivimos en una era en constante evolución, donde la tecnología desempeña un papel fundamental en la optimización de procesos, la toma de decisiones informadas y el logro de resultados más eficientes y sostenibles en los ámbitos productivos, sociales y medioambientales.En este sentido, hemos implementado soluciones tecnológicas avanzadas en todas las etapas de nuestros proyectos."}
+            content={"Utilizamos sistemas de gestión de datos y análisis avanzados para recopilar información valiosa sobre el rendimiento de nuestras operaciones, lo que nos permite tomar decisiones más acertadas y basadas en datos en tiempo real."}/>
           </div>
         </div>
       </section>
@@ -125,7 +126,8 @@ const Industrias = () => {
           <div className={styles.textIndustrias}>
             <h2 className={styles.textPrincipalIndustrias}>En medio de una industria que está
             experimentando cambios drásticos, ofrecemos ideas para transformar negocios del futuro.</h2>
-            <Accordion title={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."} content={"Grupo llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros."}/>
+            <Accordion title={"En un entorno empresarial en constante evolución y transformación, en Grupo Llyrod nos destacamos por nuestra capacidad para anticipar y liderar los cambios en la industria. Estamos comprometidos a ofrecer ideas innovadoras y soluciones estratégicas que ayuden a las empresas a adaptarse y prosperar en el panorama empresarial del futuro. Nuestra visión es ser pioneros en la identificación de tendencias emergentes y en la aplicación de tecnologías disruptivas para impulsar la transformación empresarial. "}
+            content={"Trabajamos en estrecha colaboración con nuestros clientes para comprender sus desafíos y oportunidades específicos, y luego desarrollamos estrategias personalizadas que les permitan destacarse en sus respectivos sectores."}/>
           </div>
         </div>
       </section>

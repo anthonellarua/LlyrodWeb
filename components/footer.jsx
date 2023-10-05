@@ -11,7 +11,7 @@ const Footer = () => {
       <footer className={styles.footer}>
         <span className={styles.contacto}>Contáctanos</span>
         <span className={styles.info}>¿Te interesó este contenido? Contáctanos para más información.</span>
-        <Link href="#" className={styles.linkicon}><CiMail className={styles.icon}/></Link>
+        <Link href="https://www.linkedin.com/company/grupo-llyrod/" className={styles.linkicon}><CiMail className={styles.icon}/></Link>
       </footer>
     </>
   );
