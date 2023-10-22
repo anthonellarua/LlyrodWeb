@@ -8,6 +8,7 @@
 
 .imageContainer{
    position: relative;
+   width: 100%;
 }
 
 .degradadoPortafolioTop {
@@ -20,6 +21,7 @@
 
 .imagen{
    max-width: 100%;
+   width: 100%;
    height: 600px;
    object-fit: cover;
    display:block;
@@ -54,6 +56,17 @@
    border-right: 0.15em solid var(--white);
    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;*/
 }
+
+.grafico{
+   position: absolute;
+   top: 50%;
+   left: 90%;
+   transform: translate(-90%, -50%);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
 /*
 @keyframes typing {
    from {
@@ -166,8 +179,14 @@
    padding: 0px 60px;
    transition: transform .5s;
    cursor: pointer;
+   background: linear-gradient(345deg, var(--dark) 40%, #323240);
 }
 
 .card:hover{
    transform: scale(1.05); 
+}
+
+.cardTittle{
+   text-align: center;
+   width: 60%;
 }

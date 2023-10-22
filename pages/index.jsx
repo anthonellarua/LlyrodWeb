@@ -9,6 +9,7 @@ import Image from "next/image";
 
 //img
 import ImagenHome from "../public/assets/img/imagen_home.png";
+import GraficoHome from "../public/assets/img/grafico_home.png";
 import LogoHome from "../public/assets/logo_soloimagen.png";
 import GifLogoHome from "../public/assets/img/gif_llyrod.gif";
 
@@ -18,9 +19,9 @@ import {BsRecycle} from "react-icons/bs";
 import {BsSun} from "react-icons/bs";
 
 const cards=[
-  {id: 'mineria', icon: <BsRecycle size={100}/>, tittle:"Minería", link: "#"},
-  {id: 'tecnologia', icon: <BsGraphUpArrow size={100}/>, tittle:"Tecnología", link: "#"},
-  {id: 'due_diligence', icon: <BsSun size={100}/>, tittle:"Due Diligence", link: "#"},
+  {id: 'mineria', icon: <BsRecycle size={100}/>, tittle:"Minería & Gestión Social", link: "#"},
+  {id: 'tecnologia', icon: <BsGraphUpArrow size={100}/>, tittle:"Inteligencia de negocios", link: "#"},
+  {id: 'due_diligence', icon: <BsSun size={100}/>, tittle:"Incubadora de desarrollo", link: "#"},
 ];
 
 //framer motion
@@ -50,6 +51,9 @@ const Home = () => {
             <span className={styles.textoSecundario}>Generamos valor a través de</span>
             <span className={styles.textoPrincipal}>Servicios Especializados</span>
             <Link className={styles.buttonVer} href="/industrias">Ver &gt;</Link>
+          </div>
+          <div className={styles.grafico}>
+            <Image src={GraficoHome} className={styles.graficohome} alt="Grafico Home"/>
           </div>
         </div>
       </section>

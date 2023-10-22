@@ -38,8 +38,7 @@ const Sostenibilidad = () => {
         </div>
          <Image className={styles.photoSostenibilidad} src={ImagenSostenibilidad} alt="Sostenibilidad"/>
          <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>Las organizaciones dan cada vez más prioridad
-            a sus responsabilidades en materia de Sostenibilidad & ESG</h2>
+            <h2 className={styles.phototittleSecondary}>Las organizaciones son más responsables en materia de Sostenibilidad & ESG</h2>
          </div>
       </section>
       <section className={styles.cardsSection}>
