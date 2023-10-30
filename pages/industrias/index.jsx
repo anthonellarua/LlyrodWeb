@@ -28,7 +28,7 @@ import {BsSun} from "react-icons/bs";
 import Accordion from "./components/accordion"; 
 
 const cardsMineria=[
-  {image: Mineria1, tittle:"Diagnostico socioeconómico-productivo", texto: "Nuestro compromiso es entender a fondo la dinámica de las comunidades locales y su entorno, para asegurarnos de que nuestras actividades generen un impacto positivo en su bienestar."},
+  {image: Mineria1, tittle:"Diagnóstico socioeconómico-productivo", texto: "Nuestro compromiso es entender a fondo la dinámica de las comunidades locales y su entorno, para asegurarnos de que nuestras actividades generen un impacto positivo en su bienestar."},
   {image: Mineria2, tittle:"Fortalecimiento de capacidades", texto: "Nuestra inversión en programas de formación y desarrollo de habilidades tiene como objetivo mejorar la calidad de vida y las oportunidades de las personas que rodean nuestras operaciones."},
   {image: Mineria3, tittle:"Articulación comercial", texto: "Trabajamos en estrecha colaboración con empresas y emprendedores de la región para fomentar alianzas que impulsen el crecimiento sostenible y la prosperidad compartida."},
 ];
@@ -55,7 +55,7 @@ const Industrias = () => {
           <div className={styles.textIndustrias}>
             <h2 className={styles.textPrincipalIndustrias}>En el marco de la política de responsabilidad social-corporativa, facilitamos soluciones 
             destinadas a promover el desarrollo y sostenibilidad de las comunidades involucradas en minería, gestión social y relaciones comunitarias.</h2>
-            <Accordion title={"Grupo Llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud así como cadenas productivas, fortalecimiento de capacidades entre otros. Nuestra participación activa en la industria de la minería se basa en principios sólidos de sostenibilidad y ética empresarial. Creemos firmemente que, al extraer y aprovechar los recursos naturales de manera responsable, podemos contribuir al bienestar de las comunidades locales y al cuidado del entorno en el que operamos."} content={"Además, nos comprometemos a respetar los más altos estándares éticos en todas nuestras operaciones. La integridad y la transparencia son fundamentales para nuestra cultura empresarial, y trabajamos incansablemente para prevenir la corrupción y promover la equidad en todas nuestras relaciones comerciales."}/>
+            <Accordion title={"Grupo Llyrod cuenta con una extensa experiencia en la formulación, ejecución y supervisión de proyectos de infraestructura, educación, salud, así como en el desarrollo y fomento de cadenas productivas, articulación comercial y formación de proveedores locales, entre otros. Nuestra participación activa en la industria de la minería se basa en principios sólidos de sostenibilidad y ética empresarial. Creemos firmemente que, al extraer y aprovechar los recursos naturales de manera responsable, es posible contribuir con el bienestar de las comunidades locales y con el cuidado del entorno en que se opera."} content={"Además, nos comprometemos a respetar los más altos estándares éticos en todas nuestras operaciones. La integridad y la transparencia son fundamentales para nuestra cultura empresarial, y trabajamos incansablemente para prevenir la corrupción y promover la ética en todas nuestras relaciones comerciales."}/>
           </div>
         </div>
       </section>
@@ -64,7 +64,7 @@ const Industrias = () => {
           <div className={styles.degradadoPortafolioTop}>
           </div>
           <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>Las empresas mineras deben adoptar un enfoque holístico</h2>
+            <h2 className={styles.phototittleSecondary}>Promovemos el desarrollo sostenible y ética en minería.</h2>
           </div>
           <div className={styles.graficoContainer}>
             <Image className={styles.photografico} src={MineriaPrincipalGrafico} alt="Minería"/>
@@ -87,11 +87,9 @@ const Industrias = () => {
         </div>
       </section>
 
-      
-
       <section className={styles.subtittleSection} id="due_diligence">
         <div className={styles.subtittleContainer}>
-          <h2 className={styles.tittlePrincipalIndustrias}>Inteligencia de <br></br>negocios</h2>
+          <h2 className={styles.tittlePrincipalIndustrias}>Inteligencia de <br></br>negocios</h2> 
           <div className={styles.textIndustrias}>
             <h2 className={styles.textPrincipalIndustrias}>En medio de una industria que está
             experimentando cambios drásticos, ofrecemos ideas para transformar negocios del futuro.</h2>

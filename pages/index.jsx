@@ -12,6 +12,9 @@ import ImagenHome from "../public/assets/img/imagen_home.png";
 import GraficoHome from "../public/assets/img/grafico_home.png";
 import LogoHome from "../public/assets/logo_soloimagen.png";
 import GifLogoHome from "../public/assets/img/gif_llyrod.gif";
+import MineriaImagen from "../public/assets/img/home/mineria_home.png";
+import TecnologiaImagen from "../public/assets/img/home/incubadora_home.png";
+import InteligenciaImagen from "../public/assets/img/home/inteligencia_home.png";
 
 //icons
 import {BsGraphUpArrow} from "react-icons/bs";
@@ -19,9 +22,9 @@ import {BsRecycle} from "react-icons/bs";
 import {BsSun} from "react-icons/bs";
 
 const cards=[
-  {id: 'mineria', icon: <BsRecycle size={100}/>, tittle:"Minería & Gestión Social", link: "#"},
-  {id: 'tecnologia', icon: <BsGraphUpArrow size={100}/>, tittle:"Inteligencia de negocios", link: "#"},
-  {id: 'due_diligence', icon: <BsSun size={100}/>, tittle:"Incubadora de desarrollo", link: "#"},
+  {id: 'mineria', imagen: MineriaImagen,icon: <BsRecycle size={24}/>, tittle:"Minería & Gestión Social", link: "#"},
+  {id: 'tecnologia', imagen: InteligenciaImagen,icon: <BsGraphUpArrow size={24}/>, tittle:"Inteligencia de negocios", link: "#"},
+  {id: 'due_diligence', imagen: TecnologiaImagen,icon: <BsSun size={24}/>, tittle:"Incubadora de desarrollo", link: "#"},
 ];
 
 //framer motion
@@ -33,8 +36,8 @@ const cardVariants = {
     y:-1,
     transition: {
       type: "spring",
-      bounce: 0.4,
-      duration: 1
+      bounce: 0.5,
+      duration: 2
     }
   }
 };
@@ -47,26 +50,20 @@ const Home = () => {
           <div className={styles.degradadoPortafolioTop}>
           </div>
           <Image src={ImagenHome} className={styles.imagen} alt="Imagen Home"/>
-          <div className={styles.texto}>
-            <span className={styles.textoSecundario}>Generamos valor a través de</span>
-            <span className={styles.textoPrincipal}>Servicios Especializados</span>
-            <Link className={styles.buttonVer} href="/industrias">Ver &gt;</Link>
+          <div className={styles.textandGraph}>
+            <div className={styles.texto}>
+              <span className={styles.textoSecundario}>Generamos valor a través de</span>
+              <span className={styles.textoPrincipal}>Servicios Especializados</span>
+              <Link className={styles.buttonVer} href="/industrias">Ver &gt;</Link>
+            </div>
+            <div className={styles.grafico}>
+              <Image src={GraficoHome} className={styles.graficohome} alt="Grafico Home"/>
+            </div>
           </div>
-          <div className={styles.grafico}>
-            <Image src={GraficoHome} className={styles.graficohome} alt="Grafico Home"/>
-          </div>
+
         </div>
       </section>
-      <section className={styles.infoSection}>
-        <div className={styles.infoContainer}>
-          <div className={styles.cardInfo}>
-            <Image src={GifLogoHome} className={styles.infoLogo} alt="Logo Home"/>
-            <span className={styles.infoHome}>Integramos el desarrollo de estudios de complejidad
-             técnica con la adopción de tecnologías que facilitan la correcta toma de decisiones 
-             para el ámbito productivo, social y medioambiental.</span>
-          </div>
-        </div>
-      </section>
+
       <section className={styles.cardsSection}>
         <div className={styles.cardsContainer}>
           {cards.map((card) =>{
@@ -78,9 +75,20 @@ const Home = () => {
               >
                 <Link href={`/industrias#${card.id}`} >
                   <motion.div  variants={cardVariants}>
-                    <div className={styles.card} key={card.tittle}>
-                      <span className={styles.cardIcon}> {card.icon} </span>
-                      <span className={styles.cardTittle}> {card.tittle} </span>
+                    <div className={styles.imageContainerCards}>
+                      <div className={styles.degradadoPortafolioTopCards}>
+                      </div>
+                      <Image src={card.imagen} className={styles.imagenCard} alt="Imagen Home"/>
+                      <div className={styles.textoCard}>
+                          {/*<span className={styles.cardIcon}> {card.icon} </span>*/}
+                          <span className={styles.cardTittle}> {card.tittle} </span>
+                          <Link href={`/industrias#${card.id}`}
+                            className={styles.buttonAccordion}
+                            type="button"
+                          >
+                            Leer más
+                          </Link>
+                      </div>
                     </div>
                   </motion.div>
                 </Link>
@@ -89,6 +97,18 @@ const Home = () => {
           })}
         </div>
       </section>
+
+      <section className={styles.infoSection}>
+        <div className={styles.infoContainer}>
+          <div className={styles.cardInfo}>
+            <Image src={GifLogoHome} className={styles.infoLogo} alt="Logo Home"/>
+            <span className={styles.infoHome}>Integramos el desarrollo de estudios de complejidad
+             técnica con la adopción de tecnologías que facilitan la correcta toma de decisiones 
+             para el ámbito productivo, social y medioambiental.</span>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 };

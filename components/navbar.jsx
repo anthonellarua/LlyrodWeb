@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/navbar.module.css";
+import Head from "next/head";
+import { useRouter } from 'next/router';
 
 //img
 import Logo from "../public/assets/logo_completo.png";
@@ -20,6 +22,10 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false); // Cierra el menú estableciendo menuOpen en falso.
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -36,8 +42,23 @@ const Navbar = () => {
     };
   }, []);
 
+  //asigna el título
+  const router = useRouter();
+  let pageTitle = "Llyrod | Home";
+  if (router.pathname === "/industrias") {
+    pageTitle = "Llyrod | Industrias";
+  } else if (router.pathname === "/sostenibilidad") {
+    pageTitle = "Llyrod | Sostenibilidad & ESG";
+  } else if (router.pathname === "/trabaja_con_nosotros") {
+    pageTitle = "Llyrod | Trabaja con nosotros";
+  }
+
   return (
     <>
+      <Head>
+        <title>{pageTitle}</title>
+        <link rel="icon" href="../public/assets/img/logo_llyrod.png" />
+      </Head>
       <section className={`${styles.navSection} ${isFixed ? styles.fixedNavbar : ""}`}>
         <nav className={styles.navContainer}>
           <Link className={styles.logoContainer} href="/">
@@ -50,7 +71,7 @@ const Navbar = () => {
             {pages.map((page) => {
               return (
                 <li className={styles.li} key={page.name}>
-                  <Link className={styles.a} href={page.link}>
+                  <Link className={styles.a} href={page.link} onClick={closeMenu}>
                     {page.name}
                   </Link>
                 </li>

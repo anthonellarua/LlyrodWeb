@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
    background-color: var(--dark);
-   padding: 40px 40px;
+   padding: 40px 60px;
 }
 
 .tittleContainer{
@@ -42,9 +42,8 @@
    position: absolute;
    color: var(--white);
    font-family: var(--inter);
-   top: 90%;
-   left: 7%;
-   transform: translate(-7%, -90%);
+   top: 75%;
+   left: 60px;
    width: 400px;
 }
 
@@ -72,7 +71,7 @@
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-   padding: 40px 40px;
+   padding: 40px 60px;
 }
 
 .cardsContainer{
@@ -115,4 +114,67 @@
    font-family: var(--inter);
    font-size: var(--16);
    color: var(--dark);
+}
+
+@media screen and (max-width: 1000px) {
+
+   /*---------------------------------------------------------- cards -------------------------------------------------*/
+
+   .cardsContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+
+   .card{
+      width: 100%;
+   }
+}
+
+@media (max-width: 600px) {
+   .tittleSection{
+      padding: 40px 40px;
+   }
+
+   .tittlePrincipal{
+      font-size: var(--32);
+      font-weight: 200;
+   }
+   
+   .tittleSecondary{
+      font-size: var(--32);
+      font-weight: 400;
+   }
+
+   /*-------foto en sostenibilidad-------*/
+
+   .photoSostenibilidad{
+      width: 100%;
+      height: 400px;
+   }
+   
+   .photoContainer{
+      top: 65%;
+      left: 40px;
+      width: 280px;
+   }
+   
+   .phototittleSecondary{
+      font-size: var(--20);
+   }
+   
+   .degradadoPortafolioTop {
+      height: 400px;
+      margin-bottom: -400px;
+   }
+
+   /*-------cards------*/
+
+   .cardsSection{
+      padding: 40px 40px;
+   }
+
+   .card{
+      gap: 8px;
+   }
 }
