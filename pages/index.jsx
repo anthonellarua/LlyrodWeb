@@ -75,7 +75,7 @@ const Home = () => {
         <div className={styles.imageContainer}>
           <div className={styles.degradadoPortafolioTop}>
           </div>
-          
+
           { /* <Image src={ImagenHome} className={styles.imagen} alt="Imagen Home"/> */}
           <video ref={videoRef} src={require('./video_home.mp4')} className={styles.imagen} loop autoPlay/>
           {/*<button ref={buttonRef} onClick={handlePlayClick} >Play Video</button>*/}
