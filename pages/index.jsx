@@ -6,6 +6,8 @@ import { motion, Variants } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect,useRef } from 'react';
+import { useRouter } from "next/router";
 
 //img
 import ImagenHome from "../public/assets/img/imagen_home.png";
@@ -43,13 +45,39 @@ const cardVariants = {
 };
 
 const Home = () => {
+
+  const videoRef = useRef(null);
+  const router = useRouter();
+  const buttonRef = useRef(null);
+
+
+  const handlePlayClick = () => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.error('Autoplay failed:', error);
+      });
+    }
+  };
+
+  useEffect(() => {
+    if (buttonRef.current) {
+      buttonRef.current.click();
+    }
+  }, []);
+
+  const handleCardClick = (cardId) => {
+    router.push(`/industrias#${cardId}`);
+  };
+
   return (
     <>
       <section className={styles.imageSection}>
         <div className={styles.imageContainer}>
           <div className={styles.degradadoPortafolioTop}>
           </div>
-          <Image src={ImagenHome} className={styles.imagen} alt="Imagen Home"/>
+          { /* <Image src={ImagenHome} className={styles.imagen} alt="Imagen Home"/> */}
+          <video ref={videoRef} src={require('./video_home.mp4')} className={styles.imagen} loop autoPlay/>
+          {/*<button ref={buttonRef} onClick={handlePlayClick} >Play Video</button>*/}
           <div className={styles.textandGraph}>
             <div className={styles.texto}>
               <span className={styles.textoSecundario}>Generamos valor a través de</span>
@@ -60,7 +88,6 @@ const Home = () => {
               <Image src={GraficoHome} className={styles.graficohome} alt="Grafico Home"/>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -73,7 +100,7 @@ const Home = () => {
                 whileInView="onscreen"
                 viewport={{ once: true, amount: 0.2 }} key={card.tittle}
               >
-                <Link href={`/industrias#${card.id}`} >
+                <div onClick={() => handleCardClick(card.id)}>
                   <motion.div  variants={cardVariants}>
                     <div className={styles.imageContainerCards}>
                       <div className={styles.degradadoPortafolioTopCards}>
@@ -91,7 +118,7 @@ const Home = () => {
                       </div>
                     </div>
                   </motion.div>
-                </Link>
+                </div>
               </motion.div>
             );
           })}

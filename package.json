@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start":"next start",
-    "export":"next export",
+    "start": "next start",
+    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,9 +16,14 @@
     "framer-motion": "^10.16.4",
     "googleapis": "^123.0.0",
     "next": "^13.5.4",
+    "next-video": "^0.8.1",
+    "next-videos": "^1.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.9.0",
     "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }
