@@ -57,7 +57,7 @@ const Navbar = () => {
     <>
       <Head>
         <title>{pageTitle}</title>
-        <link rel="icon" href="../public/assets/img/logo_llyrod.png" />
+        <meta property="og:image" content="../public/assets/img/logo_llyrod.png" />
       </Head>
       <section className={`${styles.navSection} ${isFixed ? styles.fixedNavbar : ""}`}>
         <nav className={styles.navContainer}>
