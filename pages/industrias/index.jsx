@@ -66,9 +66,10 @@ const Industrias = () => {
           <div className={styles.photoContainer}>
             <h2 className={styles.phototittleSecondary}>Promovemos el desarrollo sostenible y ética en minería.</h2>
           </div>
-          <div className={styles.graficoContainer}>
+
+          {/*<div className={styles.graficoContainer}>
             <Image className={styles.photografico} src={MineriaPrincipalGrafico} alt="Minería"/>
-          </div>
+  </div> */}
           <Image className={styles.photo} src={MineriaPrincipal} alt="Minería"/>
       </section>
 

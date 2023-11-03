@@ -77,7 +77,7 @@ const Home = () => {
           </div>
 
           { /* <Image src={ImagenHome} className={styles.imagen} alt="Imagen Home"/> */}
-          <video ref={videoRef} src={require('./video_home.mp4')} className={styles.imagen} loop autoPlay/>
+          <video ref={videoRef} src={require('./video_home.mp4')} className={styles.imagen} muted loop autoPlay/>
           {/*<button ref={buttonRef} onClick={handlePlayClick} >Play Video</button>*/}
 
           <div className={styles.textandGraph}>
